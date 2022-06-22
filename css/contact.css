@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+}
+
+.container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px 0px;
+}
+
+.container h2 {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+.container .inner-container {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+}
+
+.container .inner-container form {
+  width: 50%;
+  height: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .inner-container form input {
+  padding: 20px 5px;
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+}
+
+.container .inner-container form input:focus {
+  -webkit-box-shadow: 0px 0px 8px 0px #ee00ff,0px 0px 8px 0px #ee00ff;
+          box-shadow: 0px 0px 8px 0px #ee00ff,0px 0px 8px 0px #ee00ff;
+}
+
+.container .inner-container form textarea {
+  padding: 20px 5px;
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+.container .inner-container form textarea:focus {
+  -webkit-box-shadow: 0px 0px 8px 0px #ee00ff,0px 0px 8px 0px #ee00ff;
+          box-shadow: 0px 0px 8px 0px #ee00ff,0px 0px 8px 0px #ee00ff;
+}
+
+.container .inner-container form button {
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  background-color: #ee00ff;
+  color: #fff;
+  font-size: 17px;
+  cursor: pointer;
+  -webkit-transition: .2s all ease-in-out;
+  transition: .2s all ease-in-out;
+}
+
+.container .inner-container form button:hover {
+  background-color: #e705e7;
+  color: #ddd;
+  -webkit-box-shadow: 0px 0px 10px #b80ab8, 0px 0px 20px #b80ab8;
+          box-shadow: 0px 0px 10px #b80ab8, 0px 0px 20px #b80ab8;
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .container .inner-container form {
+    width: 80%;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 600px) {
+  .container .inner-container form {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=contact.css.map */

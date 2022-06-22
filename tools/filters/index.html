@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Rijan CSS Filter tool allows you to generate css filter code easily. Just use visual tools and copy your code.">
+    <meta name="keywords" content="rijan css,css tools,css code generator,filters,css filters,css filter generator">
+    <meta name="author" content="Rijan CSS Tools Generator">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav-bar.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../footer-links.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="icon" href="../../images/logo_x-icon.png" type="image/x-icon">
+    <title>Css Filters-Rijan Css Tools Generator</title>
+    <!-- Google Analytics Starts Here -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G4XMDW2D07"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-G4XMDW2D07');
+    </script>
+    <!-- Google Analytics Ends Here -->
+
+    <!-- Google Adsense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7084736997656036"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Styles Start -->
+    <style>
+        #ad-area {
+            height: auto;
+            width: 100%;
+            margin: 10px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #ad-area .main-ad {
+            width: 100%;
+            max-width: 1230px;
+            height: auto;
+        }
+    </style>
+    <!-- nav bar starts  -->
+    <header>
+        <div class="nav-container">
+            <input type="checkbox" name="" id="check">
+
+            <div class="logo-container">
+                <img src="../../images/logonav.png" alt="">
+            </div>
+
+            <div class="nav-btn">
+                <div class="nav-links">
+                    <ul>
+                        <li class="nav-link" style="--i: .6s">
+                            <a href="../../index.html">Home</a>
+                        </li>
+                        <li class="nav-link" style="--i: .6s">
+                            <a href="../box-shadow-generator">Box Shadow</a>
+                        </li>
+                        <li class="nav-link" style="--i: .6s">
+                            <a href="../cursor">Cursor</a>
+                        </li>
+                        <li class="nav-link" style="--i: .6s">
+                            <a href="#" class="active">Css Filter</a>
+                        </li>
+                        <li class="nav-link" style="--i: .85s">
+                            <a href="#">Other Tools<i class="fas fa-caret-down"></i></a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li class="dropdown-link">
+                                        <a href="../transparent-image-shadow">Transparent Image Shadow</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="../text-shadow-generator">Text Shadow</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="../border">Border</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="../transform">Transform</a>
+                                    </li>
+                                    <div class="arrow"></div>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-link" style="--i: 1.35s">
+                            <!-- <a href="../../contact.php">Contact</a> -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="hamburger-menu-container">
+                <div class="hamburger-menu">
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- nav bar ends  -->
+    <div class="container">
+        <!-- Ad Area start -->
+        <!-- ---------------------------------------------------------------------------------------------- -->
+
+        <div id="ad-area">
+            <div class="main-ad">
+                <script async
+                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7084736997656036"
+                    crossorigin="anonymous"></script>
+                <!-- first ad -->
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7084736997656036"
+                    data-ad-slot="4302949114" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </div>
+
+        <!-- Ad Area Ends Here -->
+        <!-- ----------------------------------------------------------------------------------------------- -->
+        <div class="inner-container">
+            <div class="sidebar">
+                <form>
+
+                    <!-- for brightness  -->
+                    <div class="label_and_value">
+                        <label for="brightness">Brightness</label>
+                        <div class="value" id="brightness_value"></div>
+                    </div>
+                    <input type="range" min="0" max="300" name="brightness" id="brightness" value="100"
+                        oninput="myfunc()">
+
+                    <!-- for contrast  -->
+                    <div class="label_and_value">
+                        <label for="contrast">Contrast</label>
+                        <div class="value" id="contrast_value"></div>
+                    </div>
+                    <input type="range" min="0" max="300" name="contrast" id="contrast" value="100" oninput="myfunc()">
+
+                    <!-- for saturation -->
+                    <div class="label_and_value">
+                        <label for="saturation">Saturation</label>
+                        <div class="value" id="saturation_value"></div>
+                    </div>
+                    <input type="range" min="0" max="1000" name="saturation" id="saturation" value="100"
+                        oninput="myfunc()">
+
+                    <!-- for sepia  -->
+                    <div class="label_and_value">
+                        <label for="sepia">Sepia</label>
+                        <div class="value" id="sepia_value"></div>
+                    </div>
+                    <input type="range" min="0" max="300" name="sepia" id="sepia" value="0" oninput="myfunc()">
+
+                    <!-- for blur -->
+                    <div class="label_and_value">
+                        <label for="blur">Blur</label>
+                        <div class="value" id="blur_value"></div>
+                    </div>
+                    <input type="range" min="0" max="20" name="blur" id="blur" value="0" oninput="myfunc()">
+
+                    <!-- for Hue -->
+                    <div class="label_and_value">
+                        <label for="hue">Hue</label>
+                        <div class="value" id="hue_value"></div>
+                    </div>
+                    <input type="range" min="0" max="360" name="hue" id="hue" value="0" oninput="myfunc()">
+
+                    <!-- for Grayscale -->
+                    <div class="label_and_value">
+                        <label for="grayscale">Black & White</label>
+                        <div class="value" id="grayscale_value"></div>
+                    </div>
+                    <input type="range" min="0" max="100" name="grayscale" id="grayscale" value="0" oninput="myfunc()">
+
+                    <!-- for Opacity -->
+                    <div class="label_and_value">
+                        <label for="opacity">Opacity</label>
+                        <div class="value" id="opacity_value"></div>
+                    </div>
+                    <input type="range" min="0" max="100" name="opacity" id="opacity" value="100" oninput="myfunc()">
+
+                    <!-- for Invert -->
+                    <div class="label_and_value">
+                        <label for="invert">Invert</label>
+                        <div class="value" id="invert_value"></div>
+                    </div>
+                    <input type="range" min="0" max="100" name="invert" id="invert" value="0" oninput="myfunc()">
+                </form>
+                <!-- Ad Area start -->
+                <!-- ---------------------------------------------------------------------------------------------- -->
+
+                <div id="ad-area">
+                    <div class="main-ad">
+                        <script async
+                            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7084736997656036"
+                            crossorigin="anonymous"></script>
+                        <!-- first ad -->
+                        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7084736997656036"
+                            data-ad-slot="4302949114" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                </div>
+
+                <!-- Ad Area Ends Here -->
+                <!-- ----------------------------------------------------------------------------------------------- -->
+            </div>
+            <div class="box-container">
+                <img src="nepal.jpeg" alt="">
+            </div>
+        </div>
+        <div class="result_and_copy">
+            <div class="result">
+                <p id="brightness_result"></p>
+                <p id="contrast_result"></p>
+            </div>
+            <i class="fas fa-copy" onclick="copyclipboard()"></i>
+        </div>
+        <!-- Ad Area start -->
+        <!-- ---------------------------------------------------------------------------------------------- -->
+
+        <div id="ad-area">
+            <div class="main-ad">
+                <script async
+                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7084736997656036"
+                    crossorigin="anonymous"></script>
+                <!-- first ad -->
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7084736997656036"
+                    data-ad-slot="4302949114" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </div>
+
+        <!-- Ad Area Ends Here -->
+        <!-- ----------------------------------------------------------------------------------------------- -->
+    </div>
+    <footer>
+        <div class="footer-links">
+            <a href="../../terms-and-conditions.html">Terms and Conditions</a>
+            <a href="../../privacy-policy.html">Privacy Policy</a>
+            <a href="../../disclaimer.html">Disclaimer</a>
+            <a href="../../cookies-policy.html">Cookies Policy</a>
+            <a href="../../contact.html">Contact Us</a>
+        </div>
+        <h4>Developed By <a href="http://www.facebook.com/itsrijan" target="_blank">Rijan Neupane</a></h4>
+    </footer>
+    <script src="script.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+
+</html>

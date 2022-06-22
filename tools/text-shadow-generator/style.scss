@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: auto;
+    margin: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .inner-container{
+        width: 90%;
+        height: 450px;
+        display: flex;
+        flex-direction: row;
+        .box-container{
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--background-color, #FFF);
+            p{
+                font-size: 40px;
+                font-family: sans-serif;
+                text-shadow: 
+                calc(var(--x-position, 3) * 1px)
+                calc(var(--y-position, 3) * 1px)
+                calc(var(--blur, 10) * 1px)
+                var(--shadow-color, #000)
+            }
+        }
+        .sidebar{
+            width: 20%;
+            background-color: rgba(218, 218, 218, 0.549);
+            padding: 10px 20px;
+            form{
+                display: flex;
+                flex-direction: column;
+                .label_and_value{
+                    margin-top: 10px;
+                    width: 100%;
+                    label{
+                        font-size: 18px;
+                        font-family: Arial, Helvetica, sans-serif;
+                        float: left;
+                    }
+                    .value{
+                        float: right;
+                        padding-right: 10px;
+                    }
+                }
+                input:not([type="color"]) {
+                    padding: .25em 0em;
+                    font-family: inherit;
+                    font-size: inherit;
+                    border: 1px solid transparent;
+                    border-radius: .3em;
+                    outline: none;
+                  }
+                  
+                  input:not([type="color"]):focus {
+                    border-color: #0AF;
+                  }
+                  
+                  input[type="color"] {
+                    width: 100%;
+                    border-radius: .3em;
+                    background-color: white;
+                    border: none;
+                    cursor: pointer;
+                  }
+                  button{
+                      margin-top: 20px;
+                      padding: 10px;
+                      background-color: rgb(56, 191, 10);
+                      color: #fff;
+                      font-size: 17px;
+                      border: none;
+                      border-radius: 5px;
+                      cursor: pointer;
+                      transition: .1s all ease-in-out;
+                  }
+                  button:hover{
+                      background-color: rgb(43, 150, 7);
+                  }
+            }
+        }
+    }
+    .result{
+        width: 400px;
+        height: 60px;
+        padding: 0px 0px 0px 5px;
+        background-color: rgba(218, 218, 218, 0.549);
+        font-size: 20px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        i{
+            padding: 0px 10px;
+            color: #0AF;
+            height: 60px;
+            line-height: 60px;
+            border-left: 1px solid;
+            cursor: pointer;
+            margin-left: 10px;
+            transition: .2s all ease-in-out;
+        }
+        i:hover{
+            background-color: rgb(12, 135, 197);
+            color: #fff;
+        }
+    }
+}
+
+@media (min-width:430px) and (max-width:800px){
+    .container{
+        .inner-container{
+            width: 100%;
+            .sidebar{
+                width: 30%;
+                margin-left: 10px;
+            }
+            .box-container{
+                width: 70%;
+            }
+        }
+    }
+}
+
+@media (max-width:430px){
+    .container{
+        .inner-container{
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .sidebar{
+                width: 95%;
+            }
+            .box-container{
+                width: 100%;
+                margin: 30px 0px;   
+                p{
+                    font-size: 30px;
+                }             
+            }
+        }
+        .result{
+            width: 95%;
+            height: 40px;
+            font-size: 12px;
+            i{
+                height: 40px;
+                font-size: 20px;
+                line-height: 40px;
+            }
+        }
+    }
+}

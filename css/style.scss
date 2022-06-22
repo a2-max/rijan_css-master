@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius+Unicase&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000;
+}
+
+.tool-body{
+    width: 100%;
+    height: auto;
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .tool-head{
+        color: #fff;
+        font-family: 'Delius Unicase', cursive;
+        margin-bottom: 10px;
+        font-size: 25px;
+        border-left: 3px solid rgb(184, 10, 184);
+        padding-left: 5px;
+    }
+    .tools-container{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // align-items: center;
+        .tool-inner-container{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            // justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            #tools{
+                margin-top: 10px;
+                margin-left: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 20px 20px;
+                background-color: rgb(184, 10, 184);
+                text-decoration: none;
+                font-size: 17px;
+                color: #fff;
+                font-family: Arial, Helvetica, sans-serif;
+                transition: .2s all ease-in-out;
+            }
+            #tools:hover{
+                background-color: rgb(231, 5, 231);
+                color: #ddd;
+                box-shadow: 0px 0px 10px rgb(184, 10, 184),
+                0px 0px 20px rgb(184, 10, 184),
+                0px 0px 30px rgb(184, 10, 184);
+            }
+        }
+    }
+}
+
+// media queries for tools area 
+@media (max-width:600px){
+    .tool-body{
+        margin-top: -300px;
+        .tools-container{
+            width: 90%;
+            .tool-inner-container{
+                justify-content: flex-start;
+                #tools{
+                    padding: 10px 15px;
+                    text-align: center;
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+    }
+
+// except the tool area 
+.hero {
+    // position: absolute;
+    width: 100%;
+    height: 470px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+
+}
+
+.hero .container {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    .about-inner-container{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        // align-items: center;
+        .about-head{
+            color: #fff;
+            font-family: 'Delius Unicase', cursive;
+            margin-bottom: 10px;
+            font-size: 25px;
+            border-left: 3px solid rgb(184, 10, 184);
+            padding-left: 5px;
+        }
+        p{
+            color: rgb(226, 226, 226);
+            margin-top: 10px;
+            font-size: 17px;
+            font-family: 'Roboto', sans-serif;
+            word-spacing: 2px;
+        }
+    }
+}
+
+// media query for about section
+@media(max-width:600px){
+    .about-container{
+        .about-inner-container{
+            width: 90%;
+        }
+    }
+}
+// footer starts
+  footer{
+      color: rgb(197, 197, 197);
+      text-align: center;
+      margin-top: 30px;
+      padding: 5px 0px;
+      width: 100%;
+      background-color: rgb(184, 10, 184);
+      a{
+          color: #fff;
+          text-decoration: none;
+      }
+      a:hover{
+          color: rgb(208, 208, 208);
+      }
+  }
+// footer ends 
+
+@media only screen and (max-width: 1200px) {
+    .hero .container {
+        width: 95%;
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+    .hero .container {
+        flex-direction: column;
+    }
+
+}
+
+.hero .container .textContent {
+    width: auto;
+    height: auto;
+    position: relative;
+    top: 70px;
+    left: 50px;
+}
+
+/* 
+@media only screen and (max-width: 1080px){
+
+} */
+.hero .container .textContent h1 {
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: 55px;
+    word-spacing: 5px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: rgb(248, 248, 248);
+}
+
+
+.hero .container .textContent h1 span {
+    color: rgb(184, 10, 184);
+}
+
+.hero .container .textContent p {
+    font-size: 18px;
+    margin-bottom: 50px;
+
+}
+
+.hero .container .textContent a {
+    font-size: 18px;
+    text-decoration: none;
+    padding: 17px 30px;
+    background-color: rgb(184, 10, 184);
+    color: rgb(238, 238, 238);
+    border-radius: 5px;
+    transition: .2s all ease-in-out;
+}
+.hero .container .textContent a:hover{
+    background-color: rgb(231, 5, 231);
+    color: #ddd;
+    box-shadow: 0px 0px 10px rgb(184, 10, 184),
+    0px 0px 20px rgb(184, 10, 184),
+    0px 0px 30px rgb(184, 10, 184);
+}
+// .hero .container .textContent .star{
+//     height: 40px;
+//     width: 40px;
+//     background-color: #fff;
+//     position: relative;
+//     margin-top: 50px;
+//     border-radius: 50%;
+//     background-color: rgb(240, 223, 71);
+//     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+// }
+.hero .container .imgSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero .container .imgSection img {
+    width: 400px;
+    animation: hero_img 1.3s linear infinite;
+}
+// @keyframes hero_img {
+//     0%{
+//         margin-top: 0px;
+//     }
+//     50%{
+//         margin-top: 10px;
+//     }
+//     100%{
+//         margin-top: 0px;
+//     }
+// }
+@media only screen and (max-width: 1080px) {
+    .hero .container .textContent h1 {
+        font-size: 40px;
+    }
+
+    .hero .container .imgSection img {
+        width: 500px;
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+    .hero {
+        height: 750px;
+    }
+
+    .hero .container {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .hero .container .textContent {
+        margin-bottom: 40px;
+    }
+
+    .hero .container .textContent h1 {
+        font-size: 50px;
+    }
+    .hero .container .imgSection{
+        margin-top: 80px;
+    }
+    .hero .container .imgSection img {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .hero .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .hero .container .textContent{
+        width: 100%;
+        top: 0;
+        left: 0;
+        margin-top: -100px;
+        position: relative;
+    }
+
+    .hero .container .textContent h1 {
+        font-size: 40px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .hero .container .textContent a {
+        padding: 10px 15px;
+    }
+    .hero .container .imgSection{
+        margin-top: 0px;
+    }
+    .hero .container .imgSection img {
+        width: 100%;
+        height: 150px;
+        margin-top: -200px;
+        position: absolute;
+    }
+}
+
+@media (max-width:400px){
+    .hero .container .textContent h1 {
+        font-size: 30px;
+    }
+}

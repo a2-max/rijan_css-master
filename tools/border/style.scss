@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: auto;
+    min-height: 530px;
+    margin: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .inner-container{
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        .box-container{
+            width: 70%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #FFF;
+            // for all border 
+            #box{
+                height: 150px;
+                width: 250px;
+                background-color: #FFD700;
+            }
+            // for top 
+            #box{
+                border-top: calc(var(--top, 3) * 1px) 
+                             var(--top_type, solid) 
+                             var(--top_color,#df0101);
+            }
+            // for bottom 
+            #box{
+                border-bottom: calc(var(--bottom, 3) * 1px) 
+                             var(--bottom_type, solid) 
+                             var(--bottom_color,#df0101);
+            }
+            // for left 
+            #box{
+                border-left: calc(var(--left, 3) * 1px) 
+                             var(--left_type, solid) 
+                             var(--left_color,#df0101);
+            }
+            // for right 
+            #box{
+                border-right: calc(var(--right, 3) * 1px) 
+                             var(--right_type, solid) 
+                             var(--right_color,#df0101);
+            }
+        }
+        .sidebar{
+            width: 30%;
+            background-color: rgba(218, 218, 218, 0.549);
+            padding: 10px 20px;
+            form{
+                display: flex;
+                flex-direction: column;
+                .label_and_value{
+                    margin-top: 10px;
+                    width: 100%;
+                    label{
+                        font-size: 18px;
+                        font-family: Arial, Helvetica, sans-serif;
+                        float: left;
+                    }
+                    .value{
+                        float: right;
+                        padding-right: 10px;
+                    }
+                }
+                .inputs{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    width: 100%;
+                    input:not([type="color"]) {
+                        padding: .25em 0em;
+                        width: 30%;
+                        font-family: inherit;
+                        font-size: inherit;
+                        border: 1px solid transparent;
+                        border-radius: .3em;
+                        outline: none;
+                      }
+                      
+                      .sidebar-dropdown{
+                        #dropdownMenuButton{
+                            width: 100%;
+                            overflow-y: auto;
+                            border: none;
+                        }
+                        .dropdown-menu{
+                            .label_and_input{
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                                label{
+                                    margin: 0;
+                                    padding: 0;
+                                    margin-left: -12px;
+                                }
+                            }
+                        }
+                      }
+                                            
+                      input:not([type="color"]):focus {
+                        border-color: #0AF;
+                      }
+                      
+                      input[type="color"] {
+                        width: 30%;
+                        border-radius: .3em;
+                        background-color: white;
+                        border: none;
+                        cursor: pointer;
+                      }
+                }
+            }
+        }
+    }
+    .result_and_copy{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    .result{
+        height: auto;
+        padding: 0px 5px;
+        background-color: rgba(218, 218, 218, 0.549);
+        font-size: 18px;
+    }
+    i{
+        padding: 10px 15px;
+        color: #0AF;
+        border: 1px solid;
+        cursor: pointer;
+        margin-top: 10px;
+        transition: .2s all ease-in-out;
+    }
+    i:hover{
+        background-color: rgb(12, 135, 197);
+        color: #fff;
+    }
+}
+}
+footer{
+    border-top: 1px solid #fff;
+    color: rgb(197, 197, 197);
+    text-align: center;
+    margin-top: 30px;
+    padding: 5px 0px;
+    width: 100%;
+    background-color: #000;
+    h4{
+        font-size: 18px;
+    }
+    a{
+        color: #ee00ff;
+        text-decoration: none;
+    }
+    a:hover{
+        color: #b908c5;
+        text-decoration: none;
+    }
+}
+@media (min-width:430px) and (max-width:800px){
+    .container{
+        .inner-container{
+            width: 100%;
+            .sidebar{
+                width: 40%;
+                margin-left: 10px;
+            }
+            .box-container{
+                width: 60%;
+                #box{
+                    width: 230px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:430px){
+    .container{
+        .inner-container{
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .sidebar{
+                width: 95%;
+            }
+            .box-container{
+                width: 100%;
+                margin: 30px 0px;                
+            }
+        }
+        .result_and_copy{
+            width: 95%;
+        .result{
+            height: 40px;
+            overflow-y: auto;
+            width: 95%;
+            font-size: 12px;
+        }
+        i{
+            font-size: 16px;
+        }
+    }
+    }
+}
+footer{
+    h4{
+        font-size: 14px;
+    }
+}

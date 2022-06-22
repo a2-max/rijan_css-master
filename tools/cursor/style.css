@@ -1,0 +1,306 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+}
+
+.container {
+  width: 100%;
+  min-height: 480px;
+  max-height: auto;
+  margin: 30px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .inner-container {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .inner-container .main {
+  width: 100%;
+}
+
+.container .inner-container .main h2 {
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-left: 3px solid #b80ab8;
+  padding-left: 5px;
+  color: #eee;
+}
+
+.container .inner-container .main .labels {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container .inner-container .main .labels label {
+  margin-top: 20px;
+  margin-right: 15px;
+  padding: 18px 40px;
+  background-color: #b80ab8;
+  position: relative;
+  overflow: hidden;
+}
+
+.container .inner-container .main .labels label p {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    width: 0px;
+    height: 0px;
+  }
+  100% {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    width: 0px;
+    height: 0px;
+  }
+  100% {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+.container .inner-container .main .labels label:active {
+  -webkit-animation: shake 1s linear infinite;
+          animation: shake 1s linear infinite;
+}
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  25% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  75% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  25% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  75% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+.container .inner-container .main .labels label:hover {
+  background-color: #dd0ddd;
+}
+
+.container .inner-container .main .labels #auto {
+  cursor: auto;
+}
+
+.container .inner-container .main .labels #pointer {
+  cursor: pointer;
+}
+
+.container .inner-container .main .labels #text {
+  cursor: text;
+}
+
+.container .inner-container .main .labels #progress {
+  cursor: progress;
+}
+
+.container .inner-container .main .labels #wait {
+  cursor: wait;
+}
+
+.container .inner-container .main .labels #initial {
+  cursor: initial;
+}
+
+.container .inner-container .main .labels #zoom_in {
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+
+.container .inner-container .main .labels #zoom_out {
+  cursor: -webkit-zoom-out;
+  cursor: zoom-out;
+}
+
+.container .inner-container .main .labels #grab {
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.container .inner-container .main .labels #grabbing {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+.container .inner-container .main .labels #help {
+  cursor: help;
+}
+
+.container .inner-container .main .labels #all_scroll {
+  cursor: all-scroll;
+}
+
+.container .inner-container .main .labels #cell {
+  cursor: cell;
+}
+
+.container .inner-container .main .labels #copy {
+  cursor: copy;
+}
+
+.container .inner-container .main .labels #move {
+  cursor: move;
+}
+
+.container .inner-container .main .labels #crosshair {
+  cursor: crosshair;
+}
+
+.container .inner-container .main .labels #none {
+  cursor: none;
+}
+
+.container .inner-container .main .labels #vertical_text {
+  cursor: vertical-text;
+}
+
+.container .inner-container .main .labels #s_resize {
+  cursor: s-resize;
+}
+
+.container .inner-container .main .labels #e_resize {
+  cursor: e-resize;
+}
+
+.container .inner-container .main .labels #w_resize {
+  cursor: w-resize;
+}
+
+.container .inner-container .main .labels #se_resize {
+  cursor: se-resize;
+}
+
+.container .inner-container .main .labels #sw_resize {
+  cursor: sw-resize;
+}
+
+.container .inner-container .main .labels #row_resize {
+  cursor: row-resize;
+}
+
+.container .inner-container .main .labels #col_resize {
+  cursor: col-resize;
+}
+
+.container .inner-container .main .labels #alias {
+  cursor: alias;
+}
+
+.container .inner-container .main .labels #not_allowed {
+  cursor: not-allowed;
+}
+
+@media (min-width: 800px) and (max-width: 1030px) {
+  .container .inner-container {
+    width: 80%;
+  }
+}
+
+@media (min-width: 430px) and (max-width: 800px) {
+  .container .inner-container {
+    width: 85%;
+  }
+}
+
+@media (max-width: 430px) {
+  .container .inner-container {
+    width: 90%;
+  }
+  .container .inner-container .main {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .inner-container .main .labels {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .inner-container .main .labels label {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */
